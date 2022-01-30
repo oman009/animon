@@ -35,7 +35,12 @@ const observer = new IntersectionObserver(animonCallback);
  */
 const animon = (selector = '.animonItem') => {
     // Build our nodes list
-    const nodes = document.querySelectorAll(selector);
+    let nodes;
+    if (typeof(selector) === 'string') {
+        nodes = document.querySelectorAll(selector);
+    } else {
+        nodes = selector;
+    }
 
     // If IntersectionObserver is supported
     if ('IntersectionObserver' in window) {

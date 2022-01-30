@@ -272,3 +272,4 @@ tags
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/node,sublimetext,emacs,visualstudiocode,vim,macos
+package-lock.json
